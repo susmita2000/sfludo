@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Peralta' rel='stylesheet'>
+         <link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
+        <title>Ludo</title>
+        <h1>LUDO</h1>
+    </head>
+        <style>
+        	  canvas{
+                
+                margin: 0 auto;
+                position: absolute;
+                top:15%;
+                border: 3px solid yellow;
+
+
+            }
+            body{
+                display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    
+            }
+            h1{
+                font-size: 80px;
+                color: yellow;
+                position: absolute;
+                top:0%;
+                margin-top: 0;
+                font-family: 'Kavoon';
+            }
+            .pic1{
+            	display: none;
+            }
+             .button {
+             	position: absolute;
+             	top:65%;
+             	left: 47%;
+                background-color: #009933;
+                height: 50px;
+                width: 90px;
+                font-size: 20px;
+                color:yellow;
+               
+            }
+            .loc1{
+            	position:absolute;
+            	left:18%;
+            	top:14%;
+            	height: 80px;
+                width: 180px;
+                font-size: 30px;
+            }
+            .loc2{
+            	position:absolute;
+            	left:70%;
+            	top:70%;
+            	height: 80px;
+                width: 180px;
+                font-size: 30px;
+            }
+            .user{
+              position: absolute;
+              left:46.5%;
+              top:90%;
+              width: 60px;
+            }
+            .user1{
+              position: absolute;
+              left:50.5%;
+              top:90%;
+            }
+
+
+        </style>
+    
+    <body>
+     <img class = "pic1"
+       id = "dic1"
+       src = "di1.png"
+       alt = "pic"  />
+       <img class = "pic1"
+       id = "dic2"
+       src = "di2.png"
+       alt = "pic"  />
+       <img class = "pic1"
+       id = "dic3"
+       src = "di3.gif"
+       alt = "pic"  />
+       <img class = "pic1"
+       id = "dic4"
+       src = "di4.jpg"
+       alt = "pic"  />
+       <img class = "pic1"
+       id = "dic5"
+       src = "di5.png"
+       alt = "pic"  />
+       <img class = "pic1"
+       id = "dic6"
+       src = "di6.jpg"
+       alt = "pic"  />
+      
+    <canvas id="ludo1" width="500" height="500"></canvas>
+    <button type="button" class="button" id="myBtn" onclick="dice()">Roll</button>
+    <button type="button" class="loc1" id="loc1" onclick="free1()">Locker for 1</button>
+    <button type="button" class="loc2" id="loc2" onclick="free2()">Locker for 2</button>
+    Dice Value: <input type="number" class="user" id="myText" min="1" max="6" >
+    <button type="button" class="user1" id="use" onclick="user() ;dice();">Enter</button>
+        <script src="ludo2.js">
+          </script> 
+
+     
+</body>
+</html>
